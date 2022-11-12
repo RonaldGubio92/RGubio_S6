@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="API.MainPage"
+            >
+
+    <StackLayout>
+        <Label Text=" Consumir API " FontSize="20" HorizontalTextAlignment="Center"/>
+        <Label x:Name="texto" Text=""/>
+
+        <ListView x:Name="MyListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label x:Name="lblNombre" Text="{Binding nombre}"></Label>
+                            <Label x:Name="lblApellido" Text="{Binding nombre}"></Label>
+                            
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Button Text="Consultar" x:Name="btnGet" Clicked="btnGet_Clicked"/>
+        <Button Text="Eliminar" x:Name="btnEliminar" Clicked="btnEliminar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>

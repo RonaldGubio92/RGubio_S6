@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="API.Ingresar"
+              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Ventana de registro" FontSize="25" HorizontalOptions="Center"                 />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                   
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Ingrese su nobre" FontSize="Medium" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtCodigo" Placeholder="" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Ingresar  nombre" FontSize="Medium" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Placeholder="" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Ingresar apellido " FontSize="Medium" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtApeliido" Placeholder="" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Ingresar edad " FontSize="Medium" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtEdad" Placeholder="" Keyboard="Numeric" Grid.Row="3" Grid.Column="1"/>
+
+                <Button x:Name="btnInsertar" Text="Agregar" Clicked="btnInsertar_Clicked" FontSize="11" Grid.Row="4" Grid.Column="0"/>
+                <Button x:Name="btnActualizar" Text="Actualizar"  Clicked="btnActualizar_Clicked" FontSize="11" Grid.Row="4" Grid.Column="1"/>
+                <Button x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked" FontSize="11" Grid.Row="4" Grid.Column="2"/>
+                <Button x:Name="btnNuevo" Text="Nuevo" Clicked="btnNuevo_Clicked" Font="11" Grid.Row="5" Grid.Column="1"/>
+            </Grid>
+            
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
